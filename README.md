@@ -1,4 +1,4 @@
-# creatorTools #妈卖皮的english
+# creatorTools #fuck english
 creator开发过程中收集的工具
 
 1:如果要延时一帧执行，可以调用scheduleOnce，传递0延时
