@@ -184,13 +184,7 @@ export default class loopScrollViewNew extends cc.ScrollView {
         this.data = this.changeDataToArray(data)
         this.showFunction = callBack
         this._init()
-        for (let i = 0; i < this.childCount; i++) {
-            let newNode = cc.instantiate(this.childNode)
-            newNode[`setIndex`] = i;
-            newNode.setPosition(this.positionList[i]);
-            this.showFunction(newNode, this.data[i]);
-            this.content.addChild(newNode)
-        }
+        this.addChildToContent()
     }
     /**
      * 刷新接口,重新排子节点,会自动滚到左上
@@ -200,7 +194,11 @@ export default class loopScrollViewNew extends cc.ScrollView {
         this.stopAutoScroll();
         this.scrollToTopLeft()
         this.data = this.changeDataToArray(data)
+        let beforeChildCount = this.childCount
         this._init()
+        if (beforeChildCount != this.childCount) {
+            this.addChildToContent()
+        }
     }
     /**
      * data的格式长度没有变
@@ -261,7 +259,7 @@ export default class loopScrollViewNew extends cc.ScrollView {
         offset = Math.min(maxScrollOffset, offset)
         let p = this.isHorizontal ? cc.p(offset, 0) : cc.p(0, offset)
         this.scrollToOffset(p, time, attenuated);
-        this.scheduleOnce(()=>{
+        this.scheduleOnce(() => {
             this.refreshPosition()
             callback()
         }, time)
@@ -271,7 +269,7 @@ export default class loopScrollViewNew extends cc.ScrollView {
      */
     public getNodeInView(): cc.Node[] {
         let nodeList = [];
-        if(this.isHorizontal){
+        if (this.isHorizontal) {
             let pX = this.content.x;
             for (let i = 0; i < this.childCount; i++) {
                 let node = this.content.children[i]
@@ -280,7 +278,7 @@ export default class loopScrollViewNew extends cc.ScrollView {
                 let b = X - (this.childNode.width - this.childAnchorLeft) >= this.viewMax;
                 if (!a && !b) nodeList.push(node)
             }
-        }else{
+        } else {
             let pY = this.content.y;
             for (let i = 0; i < this.childCount; i++) {
                 let node = this.content.children[i]
@@ -574,6 +572,19 @@ export default class loopScrollViewNew extends cc.ScrollView {
         }
         if (!isOK) {
             this._refreshPositionV(isBotton)
+        }
+    }
+    /**
+     * 添加子类
+     */
+    addChildToContent() {
+        this.content.removeAllChildren()
+        for (let i = 0; i < this.childCount; i++) {
+            let newNode = cc.instantiate(this.childNode)
+            newNode[`setIndex`] = i;
+            newNode.setPosition(this.positionList[i]);
+            this.showFunction(newNode, this.data[i]);
+            this.content.addChild(newNode)
         }
     }
 }
