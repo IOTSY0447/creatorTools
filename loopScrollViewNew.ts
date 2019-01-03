@@ -309,6 +309,11 @@ export default class loopScrollViewNew extends cc.ScrollView {
             this.childNode = this.childSampleNode
         }
         this.isHorizontal = this.type == Type.HORIZONTAL || this.type == Type.GRIDHORIZONTAL
+        if(this.isHorizontal){//保证content的anchor。在界面编辑时就会更改
+            this.content.anchorX = 0
+        }else{
+            this.content.anchorY = 1
+        }
         this.childAnchorLeft = this.childNode.width * this.childNode.anchorX
         this.childAnchorTop = this.childNode.height * this.childNode.anchorY
         this.initPositionList();
@@ -330,6 +335,7 @@ export default class loopScrollViewNew extends cc.ScrollView {
     }
     /**
      * 初始化位置列表，设计content大小
+     * 可以在编辑界面预览，方便知道某个节点的位置，但是不适用于子类大小可变的情况
      */
     private initPositionList() {
         this.positionList = [];
