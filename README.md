@@ -8,4 +8,6 @@ creator开发过程中收集的工具、攻略
 4：Ts与Js区别 ES6 Classes 和 TypeScript 包括编译原理 直播帖 https://forum.cocos.com/t/es6-classes-typescript/46550
 5：闪影地图编辑器 https://forum.cocos.com/t/v0-8-3/64971
 6：发布了款资源整理插件 https://forum.cocos.com/t/topic/55439
-7：简易图集切割工具分享 https://forum.cocos.com/t/topic/71765 #实测可行，但是图片旋转了
+7：编辑器打不开，可以试试用命令行打开  ---怎么打开，不知道
+8：感谢热心群众谁睡觉叫的分享 接触creator四个月整理的资源。 https://forum.cocos.com/t/creator-3-31/39917/57
+9：麒麟子分享的源码 https://forum.cocos.com/t/cocos-creator-2-0-6/71794
