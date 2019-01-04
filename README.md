@@ -11,3 +11,6 @@ creator开发过程中收集的工具、攻略
 7：编辑器打不开，可以试试用命令行打开  ---怎么打开，不知道
 8：感谢热心群众谁睡觉叫的分享 接触creator四个月整理的资源。 https://forum.cocos.com/t/creator-3-31/39917/57
 9：麒麟子分享的源码 https://forum.cocos.com/t/cocos-creator-2-0-6/71794
+10：刮刮卡 有可用于新手引导的骚操作 https://forum.cocos.com/t/ccc/51528   https://github.com/Jno1995/scratch-card_demo https://forum.cocos.com/t/cc/40985/5
+11：圆形运动 https://forum.cocos.com/t/cc-cirlce/69079
+12：新年干货 CocosCreator 开源 UILoader https://forum.cocos.com/t/cocoscreator-uiloader-0-0-1/54894
