@@ -13,3 +13,4 @@ creator开发过程中收集的工具、攻略
 10：刮刮卡 有可用于新手引导的骚操作 https://forum.cocos.com/t/ccc/51528   https://github.com/Jno1995/scratch-card_demo https://forum.cocos.com/t/cc/40985/5
 11：圆形运动 https://forum.cocos.com/t/cc-cirlce/69079
 12：新年干货 CocosCreator 开源 UILoader https://forum.cocos.com/t/cocoscreator-uiloader-0-0-1/54894
+13：https://github.com/1083921307/CasualGamesFramework 大佬框架
