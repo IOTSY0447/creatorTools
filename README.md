@@ -14,3 +14,4 @@ creator开发过程中收集的工具、攻略
 11：圆形运动 https://forum.cocos.com/t/cc-cirlce/69079
 12：新年干货 CocosCreator 开源 UILoader https://forum.cocos.com/t/cocoscreator-uiloader-0-0-1/54894
 13：https://github.com/1083921307/CasualGamesFramework 大佬框架
+14:贝塞尔曲线生成工具 https://forum.cocos.com/t/topic/73416
