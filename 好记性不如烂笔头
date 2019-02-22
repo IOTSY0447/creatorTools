@@ -1,1 +1,2 @@
-#"workbench.editor.enablePreview": false, vscod关闭预览模式
+1 #"workbench.editor.enablePreview": false, vscod关闭预览模式
+2 # C:\Windows\System32\drivers\etc 修改hosts 添加127.0.0.1 localhost.0 127.0.0.1 localhost.1 等，在网页打开http://localhost.0:7456/? =>可多开本地数据
