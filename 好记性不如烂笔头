@@ -1,2 +1,18 @@
 1 #"workbench.editor.enablePreview": false, vscod关闭预览模式
 2 # C:\Windows\System32\drivers\etc 修改hosts 添加127.0.0.1 localhost.0 127.0.0.1 localhost.1 等，在网页打开http://localhost.0:7456/? =>可多开本地数据
+3# 多开
+<html>
+	<frameset rows="50%,50%">
+
+		<frameset cols="50%,50%">
+			<frame src="http://localhost:7456">
+			<frame src="http://localhost.0:7456">
+		</frameset>
+
+		<frameset cols="50%,50%">
+			<frame src="http://localhost.1:7456">
+			<frame src="http://localhost.2:7456">
+		</frameset>
+
+	</frameset>
+</html>
