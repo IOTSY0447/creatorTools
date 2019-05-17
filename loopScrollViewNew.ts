@@ -456,7 +456,7 @@ export default class loopScrollViewNew extends cc.ScrollView {
         let pY = this.content.y;
         for (let i = 0; i < this.childCount; i++) {
             let node = this.content.children[i]
-            let Y = node.getPositionY() + pY;
+            let Y = node.y + pY;
             let newIndex: number;
             if (this.lastPosition > pY) {
                 if (Y + this.childAnchorTop < this.viewMin) {
@@ -535,7 +535,7 @@ export default class loopScrollViewNew extends cc.ScrollView {
             let pY = this.content.y
             for (let i = 0; i < this.childCount; i++) {
                 let node = this.content.children[i]
-                let Y = node.getPositionY() + pY;
+                let Y = node.y + pY;
                 if (Y + this.childAnchorTop < this.viewMin) {
                     this._refreshPositionV(true)
                 } else if (Y - this.childAnchorTop > this.viewMax) {
@@ -552,7 +552,7 @@ export default class loopScrollViewNew extends cc.ScrollView {
         let isOK = true;
         for (let i = 0; i < this.childCount; i++) {
             let node = this.content.children[i]
-            let Y = node.getPositionY() + pY;
+            let Y = node.y + pY;
             let newIndex;
             if (isBotton) {
                 if (Y + this.childAnchorTop < this.viewMin) {
