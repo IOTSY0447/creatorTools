@@ -16,3 +16,5 @@ creator开发过程中收集的工具、攻略
 13：https://github.com/1083921307/CasualGamesFramework 大佬框架
 14:贝塞尔曲线生成工具 https://forum.cocos.com/t/topic/73416
 15：https://forum.cocos.com/t/topic/65743/25 关注内存释放
+16:https://blog.csdn.net/weixin_41316824/article/details/85229112 如何塞一个方法。抖动特效
+
